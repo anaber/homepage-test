@@ -16,6 +16,6 @@ describe('Webflow Homepage Form Test', () => {
     cy.get('body').should('not.contain', '404'); // Check for absence of "404" in the body
 
     // Validate specific content or element on the loaded page
-    cy.contains('Start Your Quote').should('be.visible'); // Replace with text or selector unique to the target page
+    cy.contains('So simple').should('be.visible'); // Replace with text or selector unique to the target page
   });
 });
