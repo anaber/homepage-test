@@ -4,7 +4,7 @@ describe('Webflow Homepage Form Test', () => {
     cy.visit('https://www.steadily.com/');
 
     // Fill out form fields
-    cy.get('#wf-form-raw_address input[name="address"]').type('400 105th Ave, Oakland, CA 94603');
+    cy.get('#auto-complete-address').type('400 105th Ave, Oakland, CA 94603');
 
     // Submit the form
     cy.get('#wf-form-raw_address > input').click();
