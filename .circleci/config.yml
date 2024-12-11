@@ -1,12 +1,17 @@
 version: 2.1
+
 jobs:
   cypress:
     docker:
-      - image: cypress/base:16
+      - image: cypress/base:16  # Use Cypress's Docker image with Node.js 16
     steps:
       - checkout
-      - run: npm install cypress
-      - run: npx cypress run
+      - run:
+          name: Install Dependencies
+          command: npm install
+      - run:
+          name: Run Cypress Tests
+          command: npx cypress run
 workflows:
   version: 2
   test:
