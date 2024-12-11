@@ -26,7 +26,7 @@ describe('Webflow Texas Form Test', () => {
     cy.visit('https://www.steadily.com/states/texas');
 
     // Fill out form fields
-    cy.get('#auto-complete-address').type('680 Ramos St, Austin, TX 78702');
+    cy.get('#raw_address-2').type('680 Ramos St, Austin, TX 78702');
 
     // Add a delay before clicking the submit button
     cy.wait(1000); // 1 second delay
