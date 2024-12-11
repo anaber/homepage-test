@@ -12,6 +12,12 @@ jobs:
       - run:
           name: Run Cypress Tests
           command: npx cypress run
+      - store_artifacts:
+          path: cypress/videos
+          destination: cypress-videos
+      - store_artifacts:
+          path: cypress/screenshots
+          destination: cypress-screenshots
 workflows:
   version: 2
   test:
